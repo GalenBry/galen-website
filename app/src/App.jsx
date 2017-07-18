@@ -9,13 +9,14 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Buttontest from './testcomp';
+import AppBar from 'material-ui/AppBar';
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
       <div className="App">
+        <AppBar title="My Website"/>
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Galen Bryant</h2>
@@ -23,7 +24,6 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Buttontest />
       </div>
       </MuiThemeProvider>
     );
