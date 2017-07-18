@@ -4,6 +4,7 @@ import './App.css';
 // Material-UI dependencies
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Header from './components/Header'
 import AppBarMain from './components/AppBarMain'
@@ -14,10 +15,20 @@ import Footer from './components/Footer'
 injectTapEventPlugin(); // http://stackoverflow.com/a/34015469/988941
 
 
+const customTheme = {
+  palette: { 
+    primary1Color: '#4286f4',
+    primary2Color: '#135fdb',
+    primary3Color: '#586e91'
+  }
+};
+
+const theme = getMuiTheme(customTheme);
+
 export default class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={ theme }>
         <div className="App">
           <div className="App-bar">
             <AppBarMain />

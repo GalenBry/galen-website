@@ -19,8 +19,12 @@
   background-color: #222;
   height: auto;
   width: 100%;
-  color: red;
+  color: white;
   display: flex;
+}
+
+.Header-image {
+  width: 80%;
 }
 
 .App-body {
@@ -29,10 +33,6 @@
 
 .App-footer {
   font-size: small;
-}
-
-.Header-image {
-  width: 100%;
 }
 
 @keyframes App-logo-spin {

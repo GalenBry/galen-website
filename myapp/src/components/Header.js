@@ -12,10 +12,12 @@ export default class Header extends Component {
                 // <h2>Header!</h2>
     render() {
         return (
-            <div>
-                <img src='../../header2.jpg' 
-                    className="Header-image" 
-                    alt="background"/>
+            <div className="losange">
+                <div className="los1">
+                    <img src='../../header2.jpg' 
+                        className="Header-image" 
+                        alt="background"/>
+                </div>
                 <h2>Header!</h2>
             </div>
         );
