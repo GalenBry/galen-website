@@ -5,6 +5,7 @@ import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import * as Colors from 'material-ui/styles/colors';
 
 import Header from './components/Header'
 import AppBarMain from './components/AppBarMain'
@@ -17,9 +18,10 @@ injectTapEventPlugin(); // http://stackoverflow.com/a/34015469/988941
 
 const customTheme = {
   palette: { 
-    primary1Color: '#4286f4',
-    primary2Color: '#135fdb',
-    primary3Color: '#586e91'
+    primary1Color: Colors.red500,
+    // primary2Color: Colors.teal500,
+    // primary3Color: Colors.blue500,
+    alternateTextColor: Colors.red50
   }
 };
 

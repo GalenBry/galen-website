@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
 }
 
 .App-bar {
   position: fixed;
   width: 100%;
+  text-align: center;
+  z-index: 10;
 }
 
 .App-logo {
@@ -20,11 +20,24 @@
   height: auto;
   width: 100%;
   color: white;
+  /*display: flex;*/
+  padding-top: 64px;
+}
+
+.Header-container {
+  /*position: relative;*/
   display: flex;
+
 }
 
 .Header-image {
-  width: 80%;
+  display: flex;
+  width: 100%;
+  object-fit: contain;
+}
+
+.Header-typing {
+  vertical-align: center;
 }
 
 .App-body {
@@ -32,7 +45,11 @@
 }
 
 .App-footer {
-  font-size: small;
+  font-size: medium;
+  text-align: left;
+  background-color: #404040;
+  height: 150px;
+  padding: 5px;
 }
 
 @keyframes App-logo-spin {

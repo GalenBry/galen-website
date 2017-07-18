@@ -8,7 +8,8 @@ export default class Footer extends Component {
     render() {
         return (
             <div>
-                Footer!
+                &copy; No Flex Zone LLC. <br/>
+                Galen Bryant
             </div>
         );
 
