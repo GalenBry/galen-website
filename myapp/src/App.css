@@ -1,47 +1,54 @@
 .App {
-  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
 }
 
 .App-bar {
   position: fixed;
   width: 100%;
-  text-align: center;
+  text-align: left;
   z-index: 10;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
 }
 
 .App-header {
   background-color: #222;
-  height: auto;
-  width: 100%;
-  color: white;
-  /*display: flex;*/
-  padding-top: 64px;
 }
 
 .Header-container {
-  /*position: relative;*/
-  display: flex;
-
+  margin-top: -20px;
+  position: relative;
 }
 
 .Header-image {
-  display: flex;
   width: 100%;
-  object-fit: contain;
+  display: absolute;
+  display: flex;
 }
 
-.Header-typing {
-  vertical-align: center;
+.Header-flex-box {
+  position: absolute;
+  float: left;
+  top: 0; left: 0;
+  height: 130%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+}
+
+.Header-paper {
+  font-size: 300%;
+  color: white;
+  font-family: 'Lobster', cursive;
+  text-align: center; 
 }
 
 .App-body {
   font-size: large;
+  height: 1200px;
 }
 
 .App-footer {
@@ -52,7 +59,23 @@
   padding: 5px;
 }
 
+.Bottom-nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+.muidocs-icon-custom-github:before {
+    content: "\e625";
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}*/

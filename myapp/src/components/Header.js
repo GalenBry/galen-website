@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Typing from 'react-typing-animation'
+// import Paper from 'material-ui/Paper'
+
+
+// const style = {
+//   height: 100,
+//   width: 100,
+//   margin: 20,
+//   textAlign: 'center',
+//   display: 'inline-block',
+// };
+
 
 export default class Header extends Component {
     //     constructor(props) {
@@ -20,14 +31,12 @@ export default class Header extends Component {
     render() {
         return (
             <div className="Header-container">
-                <div>
-                    <img src='../../header.jpg' 
-                         className="Header-image" 
-                         alt="background"
-                    />
-                </div>
-                <div className="Header-typing">
-                    <AnimatedTypingComponent />
+                <img src='../../header.jpg' 
+                     className="Header-image" 
+                     alt="background"
+                />
+                <div className="Header-flex-box">
+                    <TypingHeader />
                 </div>
             </div>
         );
@@ -35,9 +44,20 @@ export default class Header extends Component {
     }
 }
 
-const AnimatedTypingComponent = () => (
-  <Typing loop='true'>
-    <span>This span will get typed, then erased.</span>
-    <Typing.Backspace count={50} />
-  </Typing>
+// const TypingHeader = () => (
+//     <div className="Header-paper">
+//         <Typing loop={true} speed={80}>
+//           <span>Website Design For The Modern World.</span>
+//           <Typing.Delay ms={3000} />
+//           <Typing.Backspace count={50}/>
+//         </Typing>
+//     </div>
+// );
+
+const TypingHeader = () => (
+    <div className="Header-paper">
+        <Typing speed={80}>
+          <span>Website Design For The Modern World.</span>
+        </Typing>
+    </div>
 );
