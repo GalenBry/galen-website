@@ -8,13 +8,14 @@ export default class AppDrawer extends React.Component {
     open: false,
   }
 
-  // componentWillUpdate() {
-  //   console.log("test") // works
-  // }
-
   render() {
+
+    const drawerStyle = {
+      backgroundColor: 'white',
+    }
+
     return (
-        <Drawer open={ this.props.open }>
+        <Drawer className="App-drawer" open={ this.props.open }>
           <MenuItem>Menu Item 1</MenuItem>
           <MenuItem>Menu Item 2</MenuItem>
         </Drawer>

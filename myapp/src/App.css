@@ -39,16 +39,22 @@
   width: 100%;
 }
 
-.Header-paper {
+.App-drawer {
+  background-color: white !important;
+  opacity: 1 !important; 
+}
+
+.Header-typing {
   font-size: 300%;
   color: white;
   font-family: 'Lobster', cursive;
   text-align: center; 
 }
 
-.App-body {
+.App-content {
   font-size: large;
   height: 1200px;
+  background-color: #358535;
 }
 
 .App-footer {

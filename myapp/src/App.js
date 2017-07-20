@@ -10,7 +10,7 @@ import * as Colors from 'material-ui/styles/colors';
 //Main Components
 import Header from './components/Header'
 import AppBarMain from './components/AppBarMain'
-import Body from './components/Body'
+import Content from './components/Content'
 import Footer from './components/Footer'
 
 injectTapEventPlugin(); // http://stackoverflow.com/a/34015469/988941
@@ -36,8 +36,8 @@ export default class App extends Component {
           <header className="App-header">
             <Header />
           </header>
-          <div className="App-body">
-            <Body />
+          <div className="App-content">
+            <Content />
           </div>
           <footer className="App-footer">
             <Footer />

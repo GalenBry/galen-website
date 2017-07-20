@@ -55,7 +55,7 @@ export default class Header extends Component {
 // );
 
 const TypingHeader = () => (
-    <div className="Header-paper">
+    <div className="Header-typing">
         <Typing speed={80}>
           <span>Website Design For The Modern World.</span>
         </Typing>
