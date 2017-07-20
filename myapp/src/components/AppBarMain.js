@@ -3,7 +3,7 @@ import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton'
 import IconButton from 'material-ui/IconButton'
 import NavMenu from 'material-ui/svg-icons/navigation/menu';
-import * as Colors from 'material-ui/styles/colors';
+// import * as Colors from 'material-ui/styles/colors';
 
 import '../App.css';
 import AppDrawer from './Drawer'
@@ -14,10 +14,10 @@ export default class AppBarMain extends React.Component {
     constructor(props) {
         super(props);
         this.state = {open: false, padding: 0 , paddingRight: 0};
-        this.openDrawer = this.openDrawer.bind(this);
+        this.toggleDrawer = this.toggleDrawer.bind(this);
     }
 
-    openDrawer(event) {
+    toggleDrawer(event) {
         this.setState(
             { open: !this.state.open },
             function() {
@@ -38,6 +38,8 @@ export default class AppBarMain extends React.Component {
             });
     }
 
+
+
     render() {
         var titleStyle = 
         {   cursor: 'pointer',
@@ -56,14 +58,17 @@ export default class AppBarMain extends React.Component {
             <div>
                 <AppBar 
                     zDepth={5}
-                    
+                    title={<span style={titleStyle}>Galen Bryant</span>}
                     className="App-bar"
                     onTitleTouchTap={titleTouchTap}
                     iconElementRight={<FlatButton label="Login" />}
-                    onLeftIconButtonTouchTap={this.openDrawer}
+                    onLeftIconButtonTouchTap={this.toggleDrawer}
                     iconElementLeft={<IconButton style={navStyle}><NavMenu/></IconButton> }
                 />
-                <AppDrawer open={ this.state.open } />
+                <AppDrawer 
+                    open={ this.state.open } 
+                    callBack={(open) => this.setState({open})}
+                />
             </div>
         );
 
