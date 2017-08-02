@@ -54,7 +54,7 @@
 .App-content {
   font-size: large;
   height: 1200px;
-  background-color: #358535;
+  background-color: 'white';
 }
 
 .App-footer {
@@ -74,14 +74,3 @@
 .muidocs-icon-custom-github:before {
     content: "\e625";
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-
-/*.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}*/

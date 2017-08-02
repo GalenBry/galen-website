@@ -25,8 +25,9 @@ class AppDrawer extends React.Component {
           docked={ false }
           onRequestChange={(open) => this.setState({open})}
         >
-          <MenuItem onTouchTap={this.handleClose}> Menu Item 1</MenuItem>
-          <MenuItem onTouchTap={this.handleClose}> Menu Item 2</MenuItem>
+          <MenuItem onTouchTap={this.handleClose}> Machine Learning</MenuItem>
+          <MenuItem onTouchTap={this.handleClose}> Web Developement</MenuItem>
+          <MenuItem onTouchTap={this.handleClose}> Classes</MenuItem>
         </Drawer>
     );
   }

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Typing from 'react-typing-animation'
-// import Paper from 'material-ui/Paper'
-
 
 // const style = {
 //   height: 100,
@@ -17,10 +15,6 @@ export default class Header extends Component {
     //     constructor(props) {
     //     super(props)
     // }
-
-    // <img src='../../header2.jpg' 
-    //     className="Header-image" 
-    //     alt="background"/>    
 
     // <video className="Header-video" loop autoPlay>
     //   <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_1280p_1mb.mp4" type="video/mp4"/>
@@ -45,7 +39,7 @@ export default class Header extends Component {
 }
 
 // const TypingHeader = () => (
-//     <div className="Header-paper">
+//     <div className="Header-typing">
 //         <Typing loop={true} speed={80}>
 //           <span>Website Design For The Modern World.</span>
 //           <Typing.Delay ms={3000} />
